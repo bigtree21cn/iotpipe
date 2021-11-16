@@ -1,8 +1,5 @@
-# iotpipe
-device(json)-> mqtt -> telegraf -> influxdb
 
-
-#总体架构:
+# 总体架构:
 	IoT Simulator(publisher)----> MQTT broker---->Telegraf(subscriber)---->InfluxDB----> Grafana
 	
 	客户端上报topic: myproduct/mydevice//thing/event/property/post
@@ -61,4 +58,4 @@ device(json)-> mqtt -> telegraf -> influxdb
 	
 # 	Test:
 	http://localhost:3000/goto/ztOSk3Vnz?orgId=1
-![image](https://user-images.githubusercontent.com/16154205/141928555-2850822a-666b-4571-823f-bf4f83301496.png)
+
