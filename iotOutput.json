@@ -1,0 +1,21 @@
+{
+    "eventFrequency": 500,
+    "varyEventFrequency": true,
+    "repeatWorkflow": true,
+    "timeBetweenRepeat": 1000,
+    "varyRepeatFrequency": true,
+    "steps": [{
+            "config": [{
+		    "devID": "integer(1000, 1050)",
+		    "params" : {
+                    	"timestamp": "nowTimestamp()",
+                    	"pm25": "integer(0,1000)",
+                    	"co2": "integer(100, 1000)",
+                    	"temperature": "double(-10, 70)"
+		    },
+		    "source": "random('post','get')"
+                }],
+            "duration": 0
+        }]
+}
+

@@ -1,0 +1,19 @@
+{
+    "workflows": [{
+            "workflowName": "iot",
+            "workflowFilename": "iotOutput.json"
+        }],
+    "producers": [{
+        "type":"logger"
+    },
+    {
+        "type": "mqtt",
+        "broker.server": "tcp://10.101.202.247",
+        "broker.port": 1883,
+        "topic": "/iot/productA",
+        "clientId": "productA-client",
+        "qos": 2,
+        "username": "admin",
+        "password": "admin"
+    }]
+}
